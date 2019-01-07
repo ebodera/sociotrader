@@ -1,1 +1,1 @@
-# bullshit
+# blind-trader
