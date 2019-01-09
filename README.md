@@ -90,7 +90,7 @@ Tweak specific attributes to see if the bot does better or worse by layering add
 
 Rinse and repeat with non-tech stock such as health care, commodities, real estate to see how it performs.
 
-### MANIAC - MOMO BOT (DAY TRADING BOT)
+### Maniac - MOMO Bot (Day Trader)
 
 ##### Step 1-4: same as Executioner
 
