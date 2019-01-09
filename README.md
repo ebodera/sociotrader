@@ -76,7 +76,8 @@
   - Market Cap: <$10,000,000
   - Average Trading Volume: <100,000
   - ?
-++ TEST CASES
+
+TEST CASES
   - Test 1: BUY IF 20 SMA CROSSES OVER 50 SMA and SELL IF 20 SMA CROSSES UNDER 50 SMA
   - Test 2: BUY IF RSI FALL UNDER 25 and SELL IF RSI CROSSES OVER 75
   - Test 3: BUY IF STOCK IS WITHIN +/- 5% of 200 SMA and SELL IF... (need to look at this one)
