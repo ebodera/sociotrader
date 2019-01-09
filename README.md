@@ -1,16 +1,22 @@
 # blind-trader
 
+#### Hoarder - Historical Data Bot
+[IEX Trading](https://iextrading.com/developer/) - Broker firm to execute trades
+[Alpaca API](https://alpaca.markets/) - Market data to test out bots
+
 ## Architecture
+- Fetch data from Alpaca and social media sites
+- Store data on MySQL database
+- Host server and run scripts
+- Apply algo's to data set
+- Review results of tests
 
 #### Sociopath - Social Media Bot
-
-[]()
 #Step 1: Fethcing the data
 - Start connecting into some of the social media data via API. To start, the following SM's should be captured as a base line:
   $ Twitter
   $ Stocktwits
   $ ?
-
 
 #Step 2: Storing the data
 - Spin up a MySQL database for us to house the data. 
@@ -26,20 +32,14 @@
   $ the amount of time that has occured
       (There is a cool video that I want to find that talks about how reddit always keeps updating their front based based on a defined set rules. We could replicate something similar to that to see what the most popular ticker is at any given time.
       
-$Step 4: Building the bot
-- ?
+$Step 5: Building the bot
+- This one is tricky, because if you're simply picking stocks based on popularity, you would have to find out how it becomes unpopular, or hand that logic to teh executioner.
 
 #### Hoarder - Historical Data Bot
 
-[IEX Trading](https://iextrading.com/developer/)
-
 #### Nerd - Statistical Computation Bot
 
-[]()
-
 #### Executioner - Stock Trader Bot (SWING TRADING BOT)
-
-[Alpaca API](https://alpaca.markets/)
 
 #Step 1: Fethcing the data
 - Start connecting into some of the market data via API. To start the following tickers should be captured as a base line:
