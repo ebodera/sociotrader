@@ -54,7 +54,7 @@
   $VIX
   $SPY
 
-- A minimum of 10 years should be captured, but 20 years would be ideal so that we can capture bear market conditions such as that in 2008
+- A minimum of 5 years should be captured, but 20 years would be ideal so that we can capture bear market conditions such as that in 2008
 
 #Step 2: Storing the data
 - Spin up a MySQL database for us to house the data. 
