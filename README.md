@@ -1,8 +1,4 @@
-# blind-trader
-
-#### Hoarder - Historical Data Bot
-[IEX Trading](https://iextrading.com/developer/) - Broker firm to execute trades
-[Alpaca API](https://alpaca.markets/) - Market data to test out bots
+# sociotrader
 
 ## Architecture
 - Fetch data from Alpaca and social media sites
@@ -36,6 +32,8 @@
 - This one is tricky, because if you're simply picking stocks based on popularity, you would have to find out how it becomes unpopular, or hand that logic to teh executioner.
 
 #### Hoarder - Historical Data Bot
+[IEX Trading](https://iextrading.com/developer/) - Broker firm to execute trades
+[Alpaca API](https://alpaca.markets/) - Market data to test out bots
 
 #### Nerd - Statistical Computation Bot
 
