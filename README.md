@@ -32,7 +32,7 @@
   $ the amount of time that has occured
       (There is a cool video that I want to find that talks about how reddit always keeps updating their front based based on a defined set rules. We could replicate something similar to that to see what the most popular ticker is at any given time.
       
-$Step 5: Building the bot
+#Step 5: Building the bot
 - This one is tricky, because if you're simply picking stocks based on popularity, you would have to find out how it becomes unpopular, or hand that logic to teh executioner.
 
 #### Hoarder - Historical Data Bot
