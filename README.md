@@ -88,7 +88,8 @@ $Step 5: Building the bot
 
 #### MANIAC - MOMO BOT (DAY TRADING BOT)
 
-#step 1-4 same 
+#step 1-4 same as executioner
+
 #step 5
 ++ Bare Minimumm requirements for stock selection
   - Market Cap: <$1,000,000
