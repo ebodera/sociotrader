@@ -37,7 +37,7 @@ $Step 4: Building the bot
 
 []()
 
-#### Executioner - Stock Trader Bot
+#### Executioner - Stock Trader Bot (SWING TRADING BOT)
 
 [Alpaca API](https://alpaca.markets/)
 
@@ -69,7 +69,7 @@ $Step 4: Building the bot
   $ PRICE
   $ TIME STAMP
 
-$Step 5: Building the bot
+#Step 5: Building the bot
 - This is where we can have fun. There are a couple basic scenarios we can start with for a technical bot:
 
 ++ Bare Minimum requirements for stock selection:
@@ -81,3 +81,21 @@ $Step 5: Building the bot
   - Test 2: BUY IF RSI FALL UNDER 25 and SELL IF RSI CROSSES OVER 75
   - Test 3: BUY IF STOCK IS WITHIN +/- 5% of 200 SMA and SELL IF... (need to look at this one)
   
+#Step 6: Analyze P/L
+- Apply specific test case conditions against 5, 10, and 20 year dataset and analyze how well the bot performed (% Annually)
+- Tweak specific attributes to see if the bot does better or worse by layering additional conditions to the algorithm.
+- Rinse and repeat with non-tech stock such as health care, commodities, real estate to see how it performs.
+
+#### MANIAC - MOMO BOT (DAY TRADING BOT)
+
+#step 1-4 same 
+#step 5
+++ Bare Minimumm requirements for stock selection
+  - Market Cap: <$1,000,000
+  - Relative Volume: <4x normal
+  - Current Volume: <100,000
+
+++ TEST CASES
+  - Test 1: BUY IF STOCK CROSSES ABOVE 9 EMA AND SELL IF STOCK FALLS MORE THAN x% (depends on the volitility of the stock)
+  - Test 2: BUY IF MACD CROSSES OVER and SELL IF MACD CROSSES UNDER
+  - Test 3: Pattern Matching (Bot Creates Trend Lines and BUYS IF IT CROSSES OVER and SELL using TRAILING STOP)
