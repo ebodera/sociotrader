@@ -26,7 +26,7 @@ There are couple options I found online such as [Redis](https://redis.io/) and [
 
 Ultimately we have to create tables that can reflect the following:
   - TICKER SYMBOL
-  - # of TIMES someone talked about it
+  - Number of TIMES someone talked about it
   - the amount of time that has occurred
       - There is a cool video that I want to find that talks about how reddit always keeps updating their front based based on a defined set rules. We could replicate something similar to that to see what the most popular ticker is at any given time.
 
@@ -92,7 +92,7 @@ Rinse and repeat with non-tech stock such as health care, commodities, real esta
 
 #### MANIAC - MOMO BOT (DAY TRADING BOT)
 
-###### Step 1-4 same as executioner
+###### Step 1-4: same as Executioner
 
 ###### Step 5
 Bare Minimum requirements for stock selection
