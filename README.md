@@ -39,7 +39,7 @@ This one is tricky, because if you're simply picking stocks based on popularity,
 
 ### Nerd - Statistical Computation Bot
 
-### Executioner - Stock Trader Bot (SWING TRADING BOT)
+### Hooker - Stock Trader Bot (Swing)
 
 ##### Step 1: Fetching the data
 Start connecting into some of the market data via API. To start the following tickers should be captured as a base line:
@@ -90,9 +90,9 @@ Tweak specific attributes to see if the bot does better or worse by layering add
 
 Rinse and repeat with non-tech stock such as health care, commodities, real estate to see how it performs.
 
-### Maniac - MOMO Bot (Day Trader)
+### Maniac - Stock Trader Bot (MOMO)
 
-##### Step 1-4: same as Executioner
+##### Step 1-4: same as Hooker
 
 ##### Step 5
 Bare Minimum requirements for stock selection
