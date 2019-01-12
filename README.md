@@ -1,5 +1,7 @@
 # sociotrader
 
+![icon](https://storage.googleapis.com/indie-hackers.appspot.com/product-avatars/stock-trading-bot/ibTLPyjwVebnZjMGKvz6ztarnuV2)
+
 ## Architecture
 - Fetch data from Alpaca and social media sites
 - Store data on MySQL database
