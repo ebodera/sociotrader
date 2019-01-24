@@ -36,12 +36,12 @@
 
 [NOTES](NOTES.md)
 
-### Alpaca
-- [Alpaca API](https://alpaca.markets/) - Market data to test out bots
+#### Alpaca
+- [Alpaca API](https://alpaca.markets/)
 - [Alpaca Repo](https://github.com/alpacahq)
   - [roboadvisor](https://github.com/alpacahq/roboadvisor)
 - [Alpaca Documentation](https://docs.alpaca.markets)
 - [Alpaca Insomnia Workspace](https://github.com/alpacahq/insomnia-workspace)
 
-### IEXTrading
+#### IEXTrading
 - [IEX Trading](https://iextrading.com/developer/) - Broker firm to execute trades
