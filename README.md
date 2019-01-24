@@ -26,6 +26,8 @@
 [S&P100 replication algo for Alpaca API](https://github.com/alpacahq/sp100algo)
 > This is an algorithm that manage your portfolio by simply replication S&P100 index by buying the underlying stocks.
 
+[Quant-trading](https://github.com/tattooday/quant-trading)
+> Most scripts inside this repository are technical indicator automated trading. These scripts include various types of momentum trading, opening range breakout and statistical arbitrage strategies.
 
 ### Sentiment Analysis
 

@@ -1,3 +1,8 @@
+# Algorithms
+
+## Rewrite Python algorithms in Golang
+[Quant-trading](https://github.com/tattooday/quant-trading)
+
 # Sentiment Analysis
 
 ## Step 1: Fetching the data
