@@ -9,7 +9,7 @@
 
 ### [Docker](https://github.com/alpacahq/marketstore#docker)
 ```sh
-❯ ocker run -i -p 5993:5993 alpacamarkets/marketstore:latest
+❯ docker run -i -p 5993:5993 alpacamarkets/marketstore:latest
 ```
 
 ### Hosting Platform
