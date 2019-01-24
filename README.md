@@ -33,10 +33,14 @@
 
 [StockTwits?](https://stocktwits.com)
 
+## Installation
+[INSTALL.md](INSTALL.md)
+
+## Todo
+[TODO.md](TODO.md)
+
 
 ## Resources
-
-[TODO](TODO.md)
 
 #### Alpaca
 - [Alpaca Documentation](https://docs.alpaca.markets)
