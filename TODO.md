@@ -16,7 +16,7 @@ Pending tasks to bootstrap this project
 
 ## Sentiment Analysis
 
-## Step 1: Fetching the data
+### Step 1: Fetching the data
 Start connecting into some of the social media data via API. To start, the following SM's should be captured as a base line:
   - Twitter
   - Stocktwits
