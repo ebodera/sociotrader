@@ -44,4 +44,4 @@
 - [Alpaca Insomnia Workspace](https://github.com/alpacahq/insomnia-workspace)
 
 #### IEXTrading
-- [IEX Trading](https://iextrading.com/developer/) - Broker firm to execute trades
+- [IEX Trading](https://iextrading.com/developer/)
