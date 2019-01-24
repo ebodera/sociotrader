@@ -1,9 +1,20 @@
-# Algorithms
+# Todo
+Pending tasks to bootstrap this project
 
-## Rewrite Python algorithms in Golang
-[Quant-trading](https://github.com/tattooday/quant-trading)
+## Client
+- Integrate `alpaca-trade-api-go`.
 
-# Sentiment Analysis
+## Market
+- Deploy `MarketStore` docker in Heroku instance.
+
+## Algorithms
+- Integrate algorithms.
+
+### Rewrite in Golang
+- [Quant-trading](https://github.com/tattooday/quant-trading)
+
+
+## Sentiment Analysis
 
 ## Step 1: Fetching the data
 Start connecting into some of the social media data via API. To start, the following SM's should be captured as a base line:
@@ -11,13 +22,13 @@ Start connecting into some of the social media data via API. To start, the follo
   - Stocktwits
   - ?
 
-## Step 2: Storing the data
+### Step 2: Storing the data
 Spin up a MySQL database for us to house the data.
 
-## Step 3: Spinning up a server
+### Step 3: Spinning up a server
 - We can either stand one up locally (I have a desktop I can use for this) or we use Heroku or Dokku which are a couple that are recommended.
 
-## Step 4: Parsing the data
+### Step 4: Parsing the data
 There are couple options I found online such as [Redis](https://redis.io/) and [Pudo](https://github.com/pudo/dataset)
 
 Ultimately we have to create tables that can reflect the following:
@@ -26,12 +37,12 @@ Ultimately we have to create tables that can reflect the following:
   - the amount of time that has occurred
       - There is a cool video that I want to find that talks about how reddit always keeps updating their front based based on a defined set rules. We could replicate something similar to that to see what the most popular ticker is at any given time.
 
-## Step 5: Building the bot
+### Step 5: Building the bot
 This one is tricky, because if you're simply picking stocks based on popularity, you would have to find out how it becomes unpopular, or hand that logic to the executioner.
 
-# Swing Trading
+## Swing Trading
 
-## Step 1: Fetching the data
+### Step 1: Fetching the data
 Start connecting into some of the market data via API. To start the following tickers should be captured as a base line:
   - `$AAPL`
   - `$GOOGL`
@@ -46,13 +57,13 @@ Start connecting into some of the market data via API. To start the following ti
 
 A minimum of 5 years should be captured, but 20 years would be ideal so that we can capture bear market conditions such as that in 2008
 
-## Step 2: Storing the data
+### Step 2: Storing the data
 Spin up a MySQL database for us to house the data.
 
-## Step 3: Spinning up a server
+### Step 3: Spinning up a server
 We can either stand one up locally (I have a desktop I can use for this) or we use Heroku or Dokku which are a couple that are recommended.
 
-## Step 4: Parsing the data
+### Step 4: Parsing the data
 There are couple options I found online such as [Redis](https://redis.io/) and [Pudo](https://github.com/pudo/dataset)
 
 Ultimately we have to create tables that can reflect the following:
@@ -60,7 +71,7 @@ Ultimately we have to create tables that can reflect the following:
   - PRICE
   - TIME STAMP
 
-## Step 5: Building the bot
+### Step 5: Building the bot
 This is where we can have fun. There are a couple basic scenarios we can start with for a technical bot:
 
 Bare Minimum requirements for stock selection:
@@ -73,7 +84,7 @@ TEST CASES
   - Test 2: BUY IF RSI FALL UNDER 25 and SELL IF RSI CROSSES OVER 75
   - Test 3: BUY IF STOCK IS WITHIN +/- 5% of 200 SMA and SELL IF... (need to look at this one)
 
-## Step 6: Analyze P/L
+### Step 6: Analyze P/L
 Apply specific test case conditions against 5, 10, and 20 year dataset and analyze how well the bot performed (% Annually)
 
 Tweak specific attributes to see if the bot does better or worse by layering additional conditions to the algorithm.
@@ -81,11 +92,11 @@ Tweak specific attributes to see if the bot does better or worse by layering add
 Rinse and repeat with non-tech stock such as health care, commodities, real estate to see how it performs.
 
 
-# MOMO Trading
+## MOMO Trading
 
-## Steps 1-4 from Swing Trading
+### Steps 1-4 from Swing Trading
 
-## Step 5
+### Step 5
 Bare Minimum requirements for stock selection
   - Market Cap: <$1,000,000
   - Relative Volume: <4x normal
