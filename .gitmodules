@@ -1,6 +1,0 @@
-[submodule "marketstore"]
-	path = marketstore
-	url = git@github.com:eboderas/marketstore.git
-[submodule "alpaca-trade-api-go"]
-	path = alpaca-trade-api-go
-	url = git@github.com:eboderas/alpaca-trade-api-go.git
