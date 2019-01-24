@@ -34,7 +34,7 @@
 
 ## Resources
 
-[NOTES](NOTES.md)
+[TODO](TODO.md)
 
 #### Alpaca
 - [Alpaca Documentation](https://docs.alpaca.markets)
