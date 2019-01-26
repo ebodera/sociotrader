@@ -4,3 +4,6 @@
 [submodule "market"]
 	path = market
 	url = git@github.com:eboderas/marketstore.git
+[submodule "algorithms"]
+	path = algorithms
+	url = git@github.com:eboderas/sociotrader-algorithms.git
