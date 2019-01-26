@@ -4,9 +4,3 @@
 [submodule "market"]
 	path = market
 	url = git@github.com:eboderas/marketstore.git
-[submodule "algorithms/sp100algo"]
-	path = algorithms/sp100algo
-	url = git@github.com:eboderas/sp100algo.git
-[submodule "algorithms/samplealgo01"]
-	path = algorithms/samplealgo01
-	url = git@github.com:eboderas/samplealgo01.git
