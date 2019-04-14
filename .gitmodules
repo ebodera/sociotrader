@@ -1,9 +1,9 @@
 [submodule "client"]
 	path = client
-	url = git@github.com:eboderas/alpaca-trade-api-go.git
+	url = git@github.com:ebodera/alpaca-trade-api-go.git
 [submodule "market"]
 	path = market
-	url = git@github.com:eboderas/marketstore.git
+	url = git@github.com:ebodera/marketstore.git
 [submodule "algorithms"]
 	path = algorithms
-	url = git@github.com:eboderas/sociotrader-algorithms.git
+	url = git@github.com:ebodera/sociotrader-algorithms.git
