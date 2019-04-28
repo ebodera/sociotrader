@@ -2,8 +2,10 @@ package main
 
 import (
 	"log"
+	"sort"
 	"time"
 
+	"github.com/VividCortex/ewma"
 	"github.com/alpacahq/alpaca-trade-api-go/alpaca"
 	"github.com/alpacahq/alpaca-trade-api-go/common"
 	strftime "github.com/jehiah/go-strftime"
@@ -17,7 +19,7 @@ type Order struct {
 
 type Diff struct {
 	symbol string
-	diff   int
+	diff   float64
 }
 
 var (
@@ -86,19 +88,33 @@ func prices(symbols []string) map[string][]alpaca.Bar {
 	return getPrices(symbols, endDt)
 }
 
-func calcScores(priceDf map[string][]alpaca.Bar, day int) []Diff {
+func calcScores(priceDf map[string][]alpaca.Bar, dayindex int) []Diff {
 	var diffs []Diff
 	param := 10
+	ema := ewma.NewMovingAverage(float64(param)) //=> returns a VariableEWMA with a decay of 2 / (5 + 1)
 
-	for i, v := range priceDf {
-		log.Printf("priceDf: %v\ni: %v\nv: %v\nparam: %v\n", priceDf[i], i, v, param)
-		break
+	for symbol, df := range priceDf {
 
-		// df := priceDf[v]
-		// if len(df.Close) <= param {
-		// 	continue
-		// }
+		if len(df) <= param {
+			continue
+		}
+
+		for _, bar := range df {
+			ema.Add(float64(bar.Close))
+		}
+
+		last := float64(df[len(df)-1].Close)
+		diff := (last - ema.Value()) / last
+		diffs = append(diffs,
+			Diff{
+				symbol: symbol,
+				diff:   diff,
+			})
 	}
+
+	sort.Slice(diffs[:], func(i, j int) bool {
+		return diffs[i].diff < diffs[j].diff
+	})
 
 	return diffs
 }
