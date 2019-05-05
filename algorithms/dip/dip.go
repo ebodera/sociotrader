@@ -9,6 +9,7 @@ import (
 	"github.com/alpacahq/alpaca-trade-api-go/alpaca"
 	"github.com/alpacahq/alpaca-trade-api-go/common"
 	strftime "github.com/jehiah/go-strftime"
+	"github.com/shopspring/decimal"
 )
 
 type Order struct {
@@ -122,10 +123,28 @@ func calcScores(priceDf map[string][]alpaca.Bar, dayindex int) []Diff {
 func getOrders(c *alpaca.Client, priceDf map[string][]alpaca.Bar, size int, max int) []Order {
 	var orders []Order
 
+	acct, err := alpacaClient.GetAccount()
+	if err != nil {
+		log.Fatalln("Unable to get account data: ", err)
+	}
+
 	log.Println("Calculating scores...")
 	ranked := calcScores(priceDf, -1)
-
 	log.Printf("%v", ranked)
+
+	// toBuy := mapset.NewSet()
+	// toSell := mapset.NewSet()
+
+	for i := range ranked[:len(ranked)-1/20] {
+		symbol := ranked[i].symbol
+		last := len(priceDf[symbol]) - 1
+		price := decimal.NewFromFloat32(priceDf[symbol][last].Close)
+		if price.LessThan(acct.Cash) {
+			continue
+		}
+		toBuy.Add(symbol)
+	}
+
 	return orders
 }
 
