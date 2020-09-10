@@ -1,4 +1,4 @@
-# sociotrader
+# trade-bot
 
 ![icon](https://storage.googleapis.com/indie-hackers.appspot.com/product-avatars/stock-trading-bot/ibTLPyjwVebnZjMGKvz6ztarnuV2)
 
